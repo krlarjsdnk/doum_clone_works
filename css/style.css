@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 @import url(reset.css);
 @import url(bootstrap-grid.css);
 *{box-sizing: border-box;}
@@ -83,6 +84,7 @@ header{
     top: 28px;
     right: 0;
     display: none;
+    z-index: 100;
 }
 .malpoongsun{
     position: absolute;
@@ -116,7 +118,7 @@ header{
     font-size: 14px;
 }
 .small-top-icon a{
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
 }
 .small-top-icon a:hover{
@@ -156,6 +158,112 @@ header{
 .top-right-all a:hover{
     text-decoration: underline;
 }
+.gnb-bar{
+    margin-top: 18px;
+}
+.gnb-bar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo, .gnb{
+    float: left;
+}
+.logo{
+    margin-left: -15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(250, 120, 120);
+    font-weight: 900;
+}
+.gnb{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: 40px;
+    display: flex;
+    height: 35px;
+    align-items: center;
+}
+.gnb a{
+    color: #666;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.gnb a:hover, .gnb a.active{
+    color: rgb(250, 120, 120);
+    font-weight: 500;
+}
+.table-icon{
+    position: relative;
+}
+.table-icon::after{
+    content: "";
+    width: 32px;
+    height: 16px;
+    position: absolute;
+    background: url(../images/ico_gnb_table.gif) no-repeat;
+    background-size: 32px 16px;
+    bottom: 15px;
+    right: 10px;
+}
+#search{
+    float: right;
+}
+.search{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-right: -15px;
+}
+.search-select{
+    margin-right: 20px;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+.select-value{
+    position: absolute;
+    border: 1px solid #666;
+    width: 130%;
+    top: 25px;
+    right: 0;
+    background: #fff;
+    z-index: 99;
+}
+.select-value li{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.select-value li:hover{
+    background-color: rgb(252, 235, 235);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.select-value li.active{
+    color: rgb(250, 120, 120);
+    font-weight: 500;
+}
+input.search-form{
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+input.search-form:focus{
+    border: 2px solid #333;
+}
+.search-btn{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: right;
+}
+
 
 
 
