@@ -288,9 +288,17 @@ input.search-form:focus{
     top: 60px;
     left: 0px;
     position: absolute;
+    background: #fff;
 }
 .slider-list{
     margin-top: 30px;
+}
+.zindex{
+    z-index: 2;
+}
+.slider-anime{
+    animation-name: fadeSlide;
+    animation-duration: 400ms;
 }
 .slider-list a{
     text-decoration: none;
@@ -380,3 +388,14 @@ input.search-form:focus{
         display: inline-block;
     }
   }
+
+@keyframes fadeSlide{
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

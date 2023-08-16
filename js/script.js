@@ -26,4 +26,24 @@ $(function(){
         $('.slider-list li').removeClass('active');
         $(this).addClass('active');
     });
+
+    $('.slide-btn').click(function(e){
+        e.preventDefault();
+        // 1. 현재 보이는 row의 순서값을 받는다.
+        // zindex가 있는 row
+        if($('.slide-row').hasClass("zindex")){
+            const index = $(this).index();
+            alert(index);
+        }
+        $('.slider-list>li').removeClass('slider-anime');
+        for(let i = 0; i < 4; i++){
+            if(i > 0){
+            $('.slider-list>li').eq(i).css("animation-duration", i + "00ms");
+        }
+            $('.slider-list>li').eq(i).addClass('slider-anime');
+        }
+    });
+
+
+
 });
