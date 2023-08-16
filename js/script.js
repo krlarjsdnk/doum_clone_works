@@ -22,4 +22,8 @@ $(function(){
     });
 
 
+    $('.slider-list li').mouseenter(function(){
+        $('.slider-list li').removeClass('active');
+        $(this).addClass('active');
+    });
 });

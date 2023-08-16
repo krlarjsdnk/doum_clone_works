@@ -264,6 +264,90 @@ input.search-form:focus{
     text-align: right;
 }
 
+/* section main01 */
+.slider{
+    position: relative;
+}
+.slider .container{
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background: url(../images/rabbit.png) no-repeat right bottom;
+    background-size: 300px 150px;
+    position: relative;
+    height: 460px;
+}
+.slider h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+.slider h2>span{
+    font-weight: 300;
+    margin-right: 2px;
+}
+.slide-row{
+    top: 60px;
+    left: 0px;
+    position: absolute;
+}
+.slider-list{
+    margin-top: 30px;
+}
+.slider-list a{
+    text-decoration: none;
+    font-size: 43px;
+    line-height: 63px;
+    color: #666;
+    font-weight: 300;
+}
+.slider-list a span:first-child{
+    display: inline-block;
+    max-width: 760px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: text-top;
+}
+.slider-list .sub{
+    font-size: 14px;
+    color: #999;
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.slider-list a:hover,
+.slider-list li.active a{
+    font-weight: 700;
+    color: #333;
+}
+.slide-btn{
+    position: absolute;
+    top: 220px;
+}
+.slide-btn.slide-left{
+    left: 50px;
+}
+.slide-btn.slide-right{
+    right: 50px;
+}
+.slide-btn i{
+    font-size: 80px;
+    color: #666;
+}
+/* section main02 */
+.best-cafe{
+    border-top: 3px solid #333;
+    background: #f4f4f4;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+
+
+
+
+
 
 
 
