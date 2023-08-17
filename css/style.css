@@ -2,6 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 @import url(reset.css);
 @import url(bootstrap-grid.css);
+@import url(animate.min.css);
 *{box-sizing: border-box;}
 body{
     font-family: 'Noto Sans KR', sans-serif;
@@ -296,10 +297,6 @@ input.search-form:focus{
 .zindex{
     z-index: 2;
 }
-.slider-anime{
-    animation-name: fadeSlide;
-    animation-duration: 400ms;
-}
 .slider-list a{
     text-decoration: none;
     font-size: 43px;
@@ -309,7 +306,7 @@ input.search-form:focus{
 }
 .slider-list a span:first-child{
     display: inline-block;
-    max-width: 760px;
+    max-width: 600px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -343,14 +340,58 @@ input.search-form:focus{
     font-size: 80px;
     color: #666;
 }
+
 /* section main02 */
 .best-cafe{
     border-top: 3px solid #333;
     background: #f4f4f4;
     padding-top: 50px;
     padding-bottom: 80px;
+    display: flex;
 }
-
+.text-center p{
+    padding-bottom: 50px;
+    color: #999;
+    font-size: 14px;
+    display: inline-block;
+}
+.text-center a{
+    display: inline-block;
+    color: #666;
+    margin-left: 30px;
+}
+.box{
+    width: 350px;
+    height: 100px;
+    background-color: #fff;
+    display: inline-block;
+}
+.box a{
+    font-size: 15px;
+    text-decoration: none;
+}
+.first-inner-box{
+    height: 80px;
+}
+.box a .headspan{
+    display: block;
+    color: #333;
+}
+.box a .midspan{
+    color: #999;
+}
+.box a .footerspan{
+    color: orangered;
+}
+.box a .footerspan2{
+    color: #999;
+}
+.box img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff
+}
 
 
 
@@ -388,14 +429,3 @@ input.search-form:focus{
         display: inline-block;
     }
   }
-
-@keyframes fadeSlide{
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}

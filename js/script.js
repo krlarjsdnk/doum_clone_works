@@ -1,4 +1,22 @@
 $(function(){
+    let n = 0
+    ViewSlide(n);
+
+    $('.slide-left').click(function(){
+        n--;
+        if(n < 0){
+            n = 5;
+        }
+        ViewSlide(n);
+    });
+    $('.slide-right').click(function(){
+        n++;
+        if(n > 5){
+            n = 0;
+        }
+        ViewSlide(n);
+    });
+
     $('.small-list').hover(function(){
         $(this).find('.small-navbox').toggle();
     });
@@ -26,24 +44,18 @@ $(function(){
         $('.slider-list li').removeClass('active');
         $(this).addClass('active');
     });
-
-    $('.slide-btn').click(function(e){
-        e.preventDefault();
-        // 1. 현재 보이는 row의 순서값을 받는다.
-        // zindex가 있는 row
-        if($('.slide-row').hasClass("zindex")){
-            const index = $(this).index();
-            alert(index);
-        }
-        $('.slider-list>li').removeClass('slider-anime');
-        for(let i = 0; i < 4; i++){
-            if(i > 0){
-            $('.slider-list>li').eq(i).css("animation-duration", i + "00ms");
-        }
-            $('.slider-list>li').eq(i).addClass('slider-anime');
-        }
-    });
-
-
-
 });
+
+function ViewSlide(n){
+    $('.slide-row').removeClass('zindex');
+    $('.slide-row').eq(n).addClass('zindex');
+    $('.slider-list>li').css({
+        opacity: 0,
+        top: '30px',
+        position: 'relative'
+    });
+    $('.slider-list>li').animate({
+        opacity: 1,
+        top: '0px'
+    }, 500);
+}
