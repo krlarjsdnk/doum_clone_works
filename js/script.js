@@ -44,7 +44,23 @@ $(function(){
         $('.slider-list li').removeClass('active');
         $(this).addClass('active');
     });
-});
+
+    setInterval(autoSlide, 8000);
+
+}); // jquery end
+
+function autoSlide(){
+    let slide = $('.slide-row');
+    let index = slide.index($('.zindex'));
+    let n = 0
+    if(index == 5){
+        n = 0
+    }else{
+        n = index + 1;
+    }
+    ViewSlide(n);
+}
+
 
 function ViewSlide(n){
     $('.slide-row').removeClass('zindex');
