@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+@import url(reset.css);
+@import url(bootstrap-grid.css);
+@import url(animate.min.css);
+*{box-sizing: border-box;}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+.text-center{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+.flex-wrap-wrap{
+    flex-wrap: wrap;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.flex-direction-row{
+    flex-direction: row;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.d-block{
+    display: block;
+}
+.d-inline-block{
+    display: inline-block;
+}
+
+/* header */
+header{
+    padding-top: 8px;
+}
+.small-logo>a{
+    display: inline-block;
+    width: 42px;
+    height: 17px;
+    background: url(../images/minidaum_v5.png) no-repeat left top;
+    background-size: 290%;
+}
+.btn-login{
+    width: 50px;
+    height: 24px;
+    border: 1px solid #e4e4e4;
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.top-right-nav{
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.small-email{
+    width: 24px;
+    height: 25px;
+    background: url(../images/minidaum_v5.png) no-repeat left -23px;
+    background-size: 545%;
+}
+.small-list{
+    width: 24px;
+    height: 26px;
+    background: url(../images/minidaum_v5.png) no-repeat -35px -22px;
+    background-size: 545%;
+    position: relative;
+    cursor: pointer;
+}
+.small-navbox{
+    position: absolute;
+    top: 28px;
+    right: 0;
+    display: none;
+    z-index: 100;
+}
+.malpoongsun{
+    position: absolute;
+    top: 0;
+    right: 2px;
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+    background: url(../images/minidaum_v5.png) no-repeat -70px -95px;
+    background-size: 600%;
+}
+.small-in-navbox{
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    margin-top: 16px;
+}
+.small-top-icon{
+    padding: 18px 20px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.small-top-icon .col-3{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.small-top-icon img{
+    width: 36px;
+    height: 36px;
+}
+.small-top-icon p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.small-top-icon a{
+    font-weight: 500;
+    text-decoration: none;
+}
+.small-top-icon a:hover{
+    text-decoration: underline;
+}
+
+.small-top-list{
+    padding: 20px 38px;
+    font-size: 12px;
+}
+.small-top-list li{
+    width: 25%;
+    border-right: 1px solid #e4e4e4;
+}
+.small-top-list li:last-child{
+    border: none;
+}
+.small-top-list a{
+    display: block;
+    text-decoration: none;
+    line-height: 25px;
+    padding-left: 10px;
+    font-weight: 300;
+}
+.small-top-list a:hover{
+    text-decoration: underline;
+}
+.top-right-all{
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    font-size: 13px;
+}
+.top-right-all a{
+    text-decoration: none;
+}
+.top-right-all a:hover{
+    text-decoration: underline;
+}
+.gnb-bar{
+    margin-top: 18px;
+}
+.gnb-bar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo, .gnb{
+    float: left;
+}
+.logo{
+    margin-left: -15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(250, 120, 120);
+    font-weight: 900;
+}
+.gnb{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: 40px;
+    display: flex;
+    height: 35px;
+    align-items: center;
+}
+.gnb a{
+    color: #666;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.gnb a:hover, .gnb a.active{
+    color: rgb(250, 120, 120);
+    font-weight: 500;
+}
+.table-icon{
+    position: relative;
+}
+.table-icon::after{
+    content: "";
+    width: 32px;
+    height: 16px;
+    position: absolute;
+    background: url(../images/ico_gnb_table.gif) no-repeat;
+    background-size: 32px 16px;
+    bottom: 15px;
+    right: 10px;
+}
+#search{
+    float: right;
+}
+.search{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-right: -15px;
+}
+.search-select{
+    margin-right: 20px;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+.select-value{
+    position: absolute;
+    border: 1px solid #666;
+    width: 130%;
+    top: 25px;
+    right: 0;
+    background: #fff;
+    z-index: 99;
+}
+.select-value li{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.select-value li:hover{
+    background-color: rgb(252, 235, 235);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.select-value li.active{
+    color: rgb(250, 120, 120);
+    font-weight: 500;
+}
+input.search-form{
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+input.search-form:focus{
+    border: 2px solid #333;
+}
+.search-btn{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: right;
+}
+
+/* section main01 */
+.slider{
+    position: relative;
+}
+.slider .container{
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background: url(../images/rabbit.png) no-repeat right bottom;
+    background-size: 300px 150px;
+    position: relative;
+    height: 460px;
+}
+.slider h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+.slider h2>span{
+    font-weight: 300;
+    margin-right: 2px;
+}
+.slide-row{
+    top: 60px;
+    left: 0px;
+    position: absolute;
+    background: #fff;
+}
+.slider-list{
+    margin-top: 30px;
+}
+.zindex{
+    z-index: 2;
+}
+.slider-list a{
+    text-decoration: none;
+    font-size: 43px;
+    line-height: 63px;
+    color: #666;
+    font-weight: 300;
+}
+.slider-list a span:first-child{
+    display: inline-block;
+    max-width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: text-top;
+}
+.slider-list .sub{
+    font-size: 14px;
+    color: #999;
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.slider-list a:hover,
+.slider-list li.active a{
+    font-weight: 700;
+    color: #333;
+}
+.slide-btn{
+    position: absolute;
+    top: 220px;
+}
+.slide-btn.slide-left{
+    left: 50px;
+}
+.slide-btn.slide-right{
+    right: 50px;
+}
+.slide-btn i{
+    font-size: 80px;
+    color: #666;
+}
+
+/* section main02 */
+.best-cafe{
+    border-top: 3px solid #333;
+    background: #f4f4f4;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    display: flex;
+}
+.text-center p{
+    padding-bottom: 50px;
+    color: #999;
+    font-size: 14px;
+    display: inline-block;
+}
+.text-center a{
+    display: inline-block;
+    color: #666;
+    margin-left: 30px;
+}
+.box{
+    width: 350px;
+    height: 100px;
+    background-color: #fff;
+    display: inline-block;
+}
+.box a{
+    font-size: 15px;
+    text-decoration: none;
+}
+.first-inner-box{
+    height: 80px;
+}
+.box a .headspan{
+    display: block;
+    color: #333;
+}
+.box a .midspan{
+    color: #999;
+}
+.box a .footerspan{
+    color: orangered;
+}
+.box a .footerspan2{
+    color: #999;
+}
+.box img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .text-sm-center{
+        text-align: center;
+    }
+    .d-sm-flex{
+        display: flex;
+    }
+    .flex-sm-wrap-wrap{
+        flex-wrap: wrap;
+    }
+    .flex-sm-direction-column{
+        flex-direction: column;
+    }
+    .flex-sm-direction-row{
+        flex-direction: row;
+    }
+    .justify-sm-content-between{
+        justify-content: space-between;
+    }
+    .align-sm-items-center{
+        align-items: center;
+    }
+    .d-sm-block{
+        display: block;
+    }
+    .d-sm-inline-block{
+        display: inline-block;
+    }
+  }

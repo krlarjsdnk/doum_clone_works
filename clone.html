@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cafe Clone</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <link rel="stylesheet" href="css/clonestyle.css" />
+        <script src="js/jquery-1.12.3.js"></script>
+        <script src="js/script.js"></script>
+        <style></style>
+    </head>
+    <body>
+        <header>
+            <div class="container nav-top">
+                <div class="row justify-content-between">
+                    <div class="small-logo"><a href="#"></a></div>
+                    <div class="top-right-nav">
+                        <button type="button" class="btn-login">로그인</button>
+                        <a href="#" class="small-email d-inline-block"></a>
+                        <div class="small-list d-inline-block">
+                            <div class="small-navbox">
+                                <div class="malpoongsun"></div>
+
+                                <div class="small-in-navbox">
+                                    <div class="small-top-icon">
+                                        <div class="d-flex">
+                                            <div class="col-3">
+                                                <a href="#"
+                                                    ><img
+                                                        src="images/ic_cafe.png"
+                                                        alt="cafe"
+                                                /></a>
+                                                <p class="text-center">
+                                                    <a href="#">카페</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-3">
+                                                <a href="#"
+                                                    ><img
+                                                        src="images/ic_news.png"
+                                                        alt="news"
+                                                /></a>
+                                                <p class="text-center">
+                                                    <a href="#">뉴스</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-3">
+                                                <a href="#"
+                                                    ><img
+                                                        src="images/ic_map.png"
+                                                        alt="map"
+                                                /></a>
+                                                <p class="text-center">
+                                                    <a href="#">지도</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-3">
+                                                <a href="#"
+                                                    ><img
+                                                        src="images/ic_shopping.png"
+                                                        alt="shopping"
+                                                /></a>
+                                                <p class="text-center">
+                                                    <a href="#">쇼핑</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- small top icon -->
+                                    <ul class="small-top-list d-flex">
+                                        <li>
+                                            <a href="#">블로그</a>
+                                            <a href="#">티스토리</a>
+                                            <a href="#">카카오TV</a>
+                                            <a href="#">브런치</a>
+                                            <a href="#">게임</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">스포츠</a>
+                                            <a href="#">연예</a>
+                                            <a href="#">영화</a>
+                                            <a href="#">웹툰</a>
+                                            <a href="#">멜론</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">어학사전</a>
+                                            <a href="#">번역</a>
+                                            <a href="#">단어장</a>
+                                            <a href="#">맞춤법검사</a>
+                                            <a href="#">백과사전</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">금융</a>
+                                            <a href="#">부동산</a>
+                                            <a href="#">자동차</a>
+                                            <a href="#">메이커스</a>
+                                            <a href="#">같이가치</a>
+                                        </li>
+                                    </ul>
+                                    <!-- 전체 보기 -->
+                                    <div class="top-right-all text-center">
+                                        <a href="#">전체보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gnb-bar container">
+                    <a href="#" class="logo">Cafe</a>
+                    <ul class="gnb">
+                        <li><a href="#" class="active">홈</a></li>
+                        <li class="table-icon"><a href="#">테이블</a></li>
+                        <li><a href="#">팬카페</a></li>
+                        <li><a href="#">카페랭킹</a></li>
+                        <li><a href="#">내카페</a></li>
+                    </ul>
+                    <form name="search" id="search" class="search" method="get">
+                        <div class="search-select">
+                            <span>전체검색</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul class="select-value">
+                                <li class="active">전체 검색</li>
+                                <li>통합검색</li>
+                                <li>카페검색</li>
+                                <li>테이블검색</li>
+                            </ul>
+                        </div>
+                        <input
+                            type="text"
+                            class="search-form"
+                            placeholder="검색어를 입력하세요."
+                        />
+                        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+            </div>
+        </header>
+        <!-- header -->
+        <section class="slider" id="main01">
+            <div class="container">
+
+                <!-- 루프 -->
+            <div class="row flex-direction-column slide-row zindex">
+            <h2><span>이야기 하나</span> 아직도 풀지 못한 고대 문명의 흔적</h2>
+            <ul class="slider-list">
+                <li class="active animate__fadeInUp">
+                    <a href="#">
+                        <span>1500년전 마야 문명 피규어</span>
+                        <span class="sub">아이러브사커</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목여름맞이 샌들 구경</span>
+                        <span class="sub">소울드레서</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목기원전 5세기 인간의 상상력 수준</span>
+                        <span class="sub">이종격투기</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목고대 로마 시대 청동상 발견 </span>
+                        <span class="sub">도탁스 (Dotax)</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="row flex-direction-column slide-row">
+            <h2><span>이야기 둘</span> 효도가 가장 쉬웠어요.jpg</h2>
+            <ul class="slider-list">
+                <li class="active animate__fadeInUp">
+                    <a href="#">
+                        <span>엄마들의 엽떡.jpg</span>
+                        <span class="sub">* 여성시대 * 차분한 20대들의 알흠다운 공간</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>21세기의 효도.twt</span>
+                        <span class="sub">쭉빵카페</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>의도치 않게 효자된 백수</span>
+                        <span class="sub">도탁스 (DOTAX)</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>부모님 폰에 해드려야 하는 일</span>
+                        <span class="sub">엽기 혹은 진실</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="row flex-direction-column slide-row">
+            <h2><span>이야기 셋</span> 아무거나 안 가리고스 다 머거스</h2>
+            <ul class="slider-list">
+                <li class="active animate__fadeInUp">
+                    <a href="#">
+                        <span>1500년전 마야 문명 피규어</span>
+                        <span class="sub">아이러브사커</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목여름맞이 샌들 구경</span>
+                        <span class="sub">소울드레서</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목기원전 5세기 인간의 상상력 수준</span>
+                        <span class="sub">이종격투기</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목고대 로마 시대 청동상 발견 </span>
+                        <span class="sub">도탁스 (Dotax)</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="row flex-direction-column slide-row">
+            <h2><span>이야기 넷</span> 아직도 풀지 못한 고대 문명의 흔적</h2>
+            <ul class="slider-list animate__fadeInUp">
+                <li class="active">
+                    <a href="#">
+                        <span>1500년전 마야 문명 피규어</span>
+                        <span class="sub">아이러브사커</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목여름맞이 샌들 구경</span>
+                        <span class="sub">소울드레서</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목기원전 5세기 인간의 상상력 수준</span>
+                        <span class="sub">이종격투기</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목고대 로마 시대 청동상 발견 </span>
+                        <span class="sub">도탁스 (Dotax)</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="row flex-direction-column slide-row">
+            <h2><span>이야기 다섯</span> 아직도 풀지 못한 고대 문명의 흔적</h2>
+            <ul class="slider-list">
+                <li class="active animate__fadeInUp">
+                    <a href="#">
+                        <span>1500년전 마야 문명 피규어</span>
+                        <span class="sub">아이러브사커</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목여름맞이 샌들 구경</span>
+                        <span class="sub">소울드레서</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목기원전 5세기 인간의 상상력 수준</span>
+                        <span class="sub">이종격투기</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목고대 로마 시대 청동상 발견 </span>
+                        <span class="sub">도탁스 (Dotax)</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="row flex-direction-column slide-row">
+            <h2><span>이야기 여섯</span> 아직도 풀지 못한 고대 문명의 흔적</h2>
+            <ul class="slider-list">
+                <li class="active animate__fadeInUp">
+                    <a href="#">
+                        <span>1500년전 마야 문명 피규어</span>
+                        <span class="sub">아이러브사커</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목여름맞이 샌들 구경</span>
+                        <span class="sub">소울드레서</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목기원전 5세기 인간의 상상력 수준</span>
+                        <span class="sub">이종격투기</span>
+                    </a>
+                </li>
+                <li class="animate__fadeInUp">
+                    <a href="#">
+                        <span>글제목고대 로마 시대 청동상 발견 </span>
+                        <span class="sub">도탁스 (Dotax)</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- 루프 -->
+
+    </div>
+        <a href="#" class="slide-btn slide-left"><i class="fa-solid fa-chevron-left"></i></a>
+        <a href="#" class="slide-btn slide-right"><i class="fa-solid fa-chevron-right"></i></a>
+        </section>
+
+        <!-- 슬라이드 section -->
+
+
+
+        <section class="best-cafe" id="main02">
+            <div class="container">
+            <div class="text-center">
+                <p>지금 로그인하고 다양한 카페를 찾아 가입해 보세요!</p>
+                <a href="#">로그인하기</a>
+            </div>
+
+            <div class="col-4 box">
+                <a href="#">
+                    <div class="first-box">
+                        <img src="images/firstbox.png" alt="fst">
+                        <div class="fir-inner-box">
+                            <span class="headspan">한국에어컨연합(에어컨설치기사모집중어쩌구)</span>
+                            <span class="midspan">에어컨설치 기술교육, 구인구직, 기술정보어쩌구저쩌구</span>
+                            <span class="footerspan">#추천카페 </span><span class="footerspan2">#에어컨설치기사</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4 box">
+                <a href="#">
+                    <div class="second-box">
+                        <img src="images/secondbox.jpg" alt="sec">
+                    </div>
+                </a>
+            </div>
+            <div class="col-4 box">
+                <a href="#">
+                    <div class="third-box">
+                        <img src="images/thirdbox.png" alt="trd">
+                    </div>
+                </a>
+            </div>
+            <div class="col-4 box">
+                <a href="#">
+                    <div class="fourth-box">
+                        <img src="images/fourthbox.jpg" alt="4th">
+                    </div>
+                </a>
+            </div>
+            <div class="col-4 box">
+                <a href="#">
+                    <div class="fifth-box">
+                        <img src="images/fifthbox.png" alt="5th">
+                    </div>
+                </a>
+            </div>
+            <div class="col-4 box">
+                <a href="#">
+                    <div class="sixth-box">
+                        <img src="images/sixthbox.png" alt="6th">
+                    </div>
+                </a>
+            </div>
+        </div>
+        </section>
+    </body>
+</html>
