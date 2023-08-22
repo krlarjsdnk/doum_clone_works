@@ -1,0 +1,96 @@
+<!-- section main04 -->
+
+        <section class="pop-cafe container" id="main04">
+            <div class="row">
+                <div class="col-md-8 pe30">
+                    <h2>카페 인기글</h2>
+                    <div class="ndate">2023.08.21.<span>17:00</span></div>
+                    <ul class="pop-list">
+                        <li>
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <div class="img-thumb"><img src="images/poplist1.jpg" alt="1"></div>
+                                    <p class="pop-num">1</p>
+                                    <p class="pop-text">넷플릭스가 ㄹㅇ 계륵인 이유 ㅋㅋㅋ</p>
+                                    <p class="pop-cafe-list">* 여성시대 * 차분한 20대의 알흠다운 공간</p>
+                                    <span class="pop-comment"> 댓글 <span class="pop-comment-red">48</span></span>
+
+                                </div>
+                                <!-- 이미지, 제목, 카페명, 댓글 -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2>공지</h2>
+                </div>
+            </div>
+        </section>
+
+
+
+
+/* section main04 */
+.pop-cafe h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+    width: 50%;
+    float: left;
+}
+.pe30{
+    padding-right: 40px;
+}
+.ndate{
+    float: right;
+}
+.ndate span{
+    font-weight: 700;
+}
+.pop-list{
+    float: left;
+    margin-top: 40px;
+}
+.pop-list li{
+    border-bottom: 1px solid #ededed;
+}
+.pop-list p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pop-num{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.pop-text{
+    width: 65%;
+    margin-left: 30px;
+    color: #666;
+}
+.pop-cafe-list{
+    font-size: 13px;
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 12%;
+    color: #999;
+}
+.pop-comment{
+    font-size: 16px;
+    width: 15%;
+    color: #666;
+}
+.pop-comment-red{
+    color: orangered;
+}
+
+
+
+const mon = ["일", "월", "화", "수", "목", "금", "토"];
+
+function newTime(){
+    let now = new Date();
+    const nowMon = now.getMonth() + 1;
+    let ntime = now.getFullYear()+ "." + nowMon + "." + now.getDate() + ".";
+    ntime += "<span> 0" + now.getHours() + ":00 </span>";
+    return ntime;
+  }

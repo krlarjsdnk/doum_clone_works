@@ -50,37 +50,6 @@ $(function(){
 
     $(".ndate").html(newTime);
 
-
-
-    $.ajax({
-        type: 'get',
-        dataType: "json",
-        url: '../data/list.json',
-        success: function(data){
-            // console.log(data.list);
-            let li="";
-            for(let i = 0; i < data.list.length; i++){
-                li += `<li>
-                        <a href="#">
-                            <div class="d-flex justify-content-between">
-                                <div class="img-thumb"><img src="images/${data.list[i].img}" alt="1"></div>
-                                <p class="pop-num">${i + 1}</p>
-                                <p class="pop-text">${data.list[i].title}</p>
-                                <p class="pop-cafe-list">${data.list[i].cafename}</p>
-                                <span class="pop-comment"> 댓글 <span class="pop-comment-red">${data.list[i].comment}</span></span>
-
-                            </div>
-                            <!-- 이미지, 제목, 카페명, 댓글 -->
-                        </a>
-                    </li>`;
-            }
-            // console.log(li);
-            $('.pop-list').html(li);
-        },
-        error: function(request, status, error){
-            console.log(error);
-        }
-    })
 }); // jquery end
 
 function autoSlide(){
@@ -114,6 +83,7 @@ function newTime(){
     let now = new Date();
     const nowMon = now.getMonth() + 1;
     let ntime = now.getFullYear()+ "." + nowMon + "." + now.getDate() + ".";
-    ntime += "<span> " + now.getHours() + ":00 </span>";
+    ntime += "<span> 0" + now.getHours() + ":00 </span>";
+    // ntime += now.getSeconds() + "초";
     return ntime;
   }

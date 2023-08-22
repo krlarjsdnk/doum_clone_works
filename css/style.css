@@ -15,9 +15,6 @@ a, a:link{
 .text-center{
     text-align: center;
 }
-.d-flex{
-    display: flex;
-}
 .flex-wrap-wrap{
     flex-wrap: wrap;
 }
@@ -484,7 +481,7 @@ input.search-form:focus{
 /* section main04 */
 .pop-cafe h2{
     font-size: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 50%;
     float: left;
 }
@@ -499,28 +496,127 @@ input.search-form:focus{
 }
 .pop-list{
     float: left;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 .pop-list li{
     border-bottom: 1px solid #ededed;
 }
+.pop-list a{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pop-list a:hover{
+    background-color: #ededed;
+}
+.pop-list a>div{
+    width: 100%;
+}
+.img-thumb{
+    width: 104px;
+    height: 65px;
+}
+.img-thumb img{
+    width: 104px;
+    height: 65px;
+    object-fit: cover;
+    object-position: center top;
+}
 .pop-list p{
-    white-space: nowrap;
+    line-height: 65px;
+}
+.pop-num{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 25px;
+    color: #444;
+}
+.pop-text{
+    color: #666;
+    font-size: 18px;
+    font-weight: 300;
+    width: 380px;
+    padding-right: 30px;
+    white-space: nowrap;    
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.pop-num{
-    margin-left: 30px;
-    font-size: 20px;
-}
-.pop-text{
-    width: 65%;
-    margin-left: 30px;
-}
 .pop-cafe-list{
-    margin-left: 30px;
-    
+    color: #999;
+    font-size: 14px;
+    width: 90px;
+    white-space: nowrap;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 20px;
 }
+.pop-comment{
+    color: #666;
+    line-height: 65px;
+    font-size: 14px;
+    font-weight: 400;
+}
+/* .pop-comment::before{
+    content: "댓글";
+    padding-right: 15px;
+} */
+.pop-comment-red{
+    color: orangered;
+    font-weight: 600;
+    padding-left: 5px;
+}
+.paging{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.paging a{
+    margin: 10px;
+    font-size: 14px;
+}
+.paging a.active{
+    font-weight: 700;
+    color: #333;
+}
+.pop-cafe h2.notice-h2{
+    float: none;
+}
+.notice li{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.notice li:first-child{
+    font-size: 18px;
+    color: #333;
+}
+.notice li a{
+    font-size: 13px;
+    color: #666;
+}
+.not-ban{
+    z-index: 3;
+}
+.evbox{
+    background: #4260aa;
+    height: 220px;
+}
+.evback1{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 4px solid #000;
+    border-bottom: none;
+    z-index: 1;
+    background-color: #fff;
+    margin-left: 200px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+
 
 
 
