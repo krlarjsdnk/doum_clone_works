@@ -59,20 +59,41 @@ $(function(){
         success: function(data){
             // console.log(data.list);
             let li="";
-            for(let i = 0; i < data.list.length; i++){
+            const rs = data.list;
+            const lists = rs.filter((item, index) => index < 10);
+/*
+            for(let i = 0; i < lists.length; i++){
                 li += `<li>
                         <a href="#">
                             <div class="d-flex justify-content-between">
-                                <div class="img-thumb"><img src="images/${data.list[i].img}" alt="1"></div>
+                                <div class="img-thumb"><img src="images/${lists[i].img}" alt="1"></div>
                                 <p class="pop-num">${i + 1}</p>
-                                <p class="pop-text">${data.list[i].title}</p>
-                                <p class="pop-cafe-list">${data.list[i].cafename}</p>
-                                <span class="pop-comment"> 댓글 <span class="pop-comment-red">${data.list[i].comment}</span></span>
+                                <p class="pop-text">${lists[i].title}</p>
+                                <p class="pop-cafe-list">${lists[i].cafename}</p>
+                                <span class="pop-comment"> 댓글 <span class="pop-comment-red">${lists[i].comment}</span></span>
 
                             </div>
                             <!-- 이미지, 제목, 카페명, 댓글 -->
                         </a>
                     </li>`;
+            }
+*/
+            let i = 1;
+            for(let item of lists){
+                li += `<li>
+                        <a href="#">
+                            <div class="d-flex justify-content-between">
+                                <div class="img-thumb"><img src="images/${item.img}" alt="1"></div>
+                                <p class="pop-num">${i}</p>
+                                <p class="pop-text">${item.title}</p>
+                                <p class="pop-cafe-list">${item.cafename}</p>
+                                <span class="pop-comment"> 댓글 <span class="pop-comment-red">${item.comment}</span></span>
+
+                            </div>
+                            <!-- 이미지, 제목, 카페명, 댓글 -->
+                        </a>
+                    </li>`;
+                    i++
             }
             // console.log(li);
             $('.pop-list').html(li);
