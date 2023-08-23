@@ -782,6 +782,90 @@ div.mouth-back{
 /* 토끼 */
 /* #ed6d6e ffccd3 */
 
+/* section main05 */
+.main05{
+    background-color: #f7f7f7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.main05 .container h1{
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.main05 .container h1>i{
+    margin-right: 10px;
+    font-size: 40px;
+    color: orangered;
+}
+.main05 .container a{
+    padding-top: 20px;
+    font-size: 17px;
+    float: right;
+    color: #666;
+    font-weight: 500;
+}
+.fan-cafe-banner{
+    margin-top: 10px;
+}
+.banner-thumb-img{
+    position: relative;
+    border: 1px solid #ededed;
+}
+.banner-thumb-img:hover{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05),
+                0 0 10px rgba(0, 0, 0, 0.14)
+}
+.rank{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+}
+.rank span:first-child{
+    position: absolute;
+    left: 27px;
+    top: 10px;
+}
+.rank span:last-child{
+    color: #666;
+    position: absolute;
+    font-size: 40px;
+    top: 25px;
+    left: 27px;
+}
+.banner-thumb-img img{
+    width: 354px;
+    height: 180px;
+}
+.banner-thumb-img .icon{
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.banner-inner-text span{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
